@@ -1,0 +1,96 @@
+/* Style for social links profile */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    color: var(--white);
+    font-size: 14px;
+}
+
+/* import Inter font from .assets/fonts/ */
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal; 
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--grey-900);
+}
+
+.card
+{
+    background-color: var(--grey-800);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px;
+    max-width: 375px;
+    border-radius: 20px;
+}
+
+.img
+{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+button{
+    background-color: var(--grey-700);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    /* inline-size: 100%; */
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* semi-bold */
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--green);
+    transition: 0.3s;
+    color: var(--grey-900);
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700; /* bold */
+    font-size: 24px;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* semi-bold */
+    color: var(--green);
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; /* regular */
+}
